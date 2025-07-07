@@ -63,6 +63,7 @@ All colors MUST be HSL for consistency and theme switching.
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-glow: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
+}
 
 @layer base {
   * {
