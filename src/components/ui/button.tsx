@@ -18,11 +18,13 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        neural: "bg-gradient-neural text-primary-foreground shadow-neural hover:shadow-glow-primary transition-all duration-500",
+        hero: "bg-primary text-primary-foreground shadow-neural hover:bg-primary-glow hover:shadow-glow-primary transition-all duration-500 border border-primary/20"
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        lg: "h-12 rounded-md px-8 text-lg font-semibold",
         icon: "h-10 w-10",
       },
     },
