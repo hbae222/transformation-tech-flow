@@ -9,22 +9,7 @@ const Landing = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Section 1: Fullscreen Hero */}
-      <section className="relative min-h-screen flex items-center justify-center">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={heroBrain} 
-            alt="Neural network visualization" 
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-hero opacity-80" />
-          <div className="absolute inset-0 bg-gradient-mesh opacity-20" />
-        </div>
-        
-        {/* Neural Grid Lines */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="w-full h-full neural-border" />
-        </div>
+      <section className="relative min-h-screen flex items-center justify-center bg-black">
         
         {/* Hero Content */}
         <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
@@ -146,10 +131,7 @@ const Landing = () => {
       </section>
 
       {/* Section 4: Waitlist Signup */}
-      <section className="py-24 bg-card/30 relative">
-        <div className="absolute inset-0 opacity-10">
-          <div className="w-full h-full bg-gradient-neural" />
-        </div>
+      <section className="py-24 bg-black relative">
         
         <div className="max-w-2xl mx-auto px-6 text-center relative z-10">
           <div className="mb-8 animate-fade-in">
