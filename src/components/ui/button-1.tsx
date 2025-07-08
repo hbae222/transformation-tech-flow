@@ -12,22 +12,13 @@ interface GradientButtonProps extends HTMLAttributes<HTMLDivElement> {
 
 const GradientButton = ({
   children,
-  width = '600px',
-  height = '100px',
+  width = '300px',
+  height = '60px',
   className = '',
   onClick,
   disabled = false,
   ...props
 }: GradientButtonProps) => {
-  const commonGradientStyles = `
-    relative rounded-[50px] cursor-pointer
-    after:content-[""] after:block after:absolute after:bg-[var(--color-background)]
-    after:inset-[5px] after:rounded-[45px] after:z-[1]
-    after:transition-opacity after:duration-300 after:ease-linear
-    flex items-center justify-center
-    ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
-  `;
-
   const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (disabled) return;
     if (e.key === 'Enter' || e.key === ' ') {
@@ -37,29 +28,27 @@ const GradientButton = ({
   };
 
   return (
-    <div className="text-[#eee] text-center">
-      <div
-        role="button"
-        tabIndex={disabled ? -1 : 0}
-        className={`
-          ${commonGradientStyles}
-          rotatingGradient
-          ${className}
-        `}
-        style={{
-          '--r': '0deg',
-          minWidth: width,
-          height: height
-        } as React.CSSProperties}
-        onClick={disabled ? undefined : onClick}
-        onKeyDown={handleKeyDown}
-        aria-disabled={disabled}
-        {...props}
-      >
-        <span className="relative z-10 text-[var(--color-text)] flex items-center justify-center label">
-          {children}
-        </span>
-      </div>
+    <div
+      role="button"
+      tabIndex={disabled ? -1 : 0}
+      className={`
+        relative rounded-[30px] cursor-pointer font-semibold text-lg
+        flex items-center justify-center text-white
+        bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700
+        shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105
+        ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
+        ${className}
+      `}
+      style={{
+        width: width,
+        height: height
+      }}
+      onClick={disabled ? undefined : onClick}
+      onKeyDown={handleKeyDown}
+      aria-disabled={disabled}
+      {...props}
+    >
+      {children}
     </div>
   );
 };
