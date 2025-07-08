@@ -304,6 +304,30 @@ All colors MUST be HSL for consistency and theme switching.
     @apply placeholder:text-muted-foreground;
     border-radius: var(--radius);
   }
+
+  /* Gradient Button Animation */
+  :root {
+    --color-background: white;
+    --color-text: white;
+  }
+
+  @keyframes rotateGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .rotatingGradient {
+    background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--primary-glow)), hsl(var(--primary)));
+    background-size: 400% 400%;
+    animation: rotateGradient 3s ease infinite;
+  }
   
   .video-container {
     @apply transition-hover hover:scale-105;
