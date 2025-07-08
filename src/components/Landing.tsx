@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Play, Brain, Target, Users, ArrowRight, Zap, MessageCircle, TrendingUp } from 'lucide-react';
 import { WaitlistFormNew } from "@/components/ui/waitlist-form-new";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 import heroBrain from '@/assets/hero-brain.jpg';
 import videoPreview from '@/assets/video-preview.jpg';
 const Landing = () => {
@@ -67,8 +68,8 @@ const Landing = () => {
       </section>
 
       {/* Section 2: Video Demo Preview */}
-      <section className="py-32 bg-warm-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <AuroraBackground className="py-32">
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="section-heading mb-4 animate-fade-in">See How It Works</h2>
           <p className="text-muted-foreground text-lg mb-12 animate-fade-in">
             Watch how our proven method builds focus, habits, and clarity - in under 2 minutes.
@@ -92,11 +93,11 @@ const Landing = () => {
             <TestimonialSection />
           </div>
         </div>
-      </section>
+      </AuroraBackground>
 
       {/* Section 3: Why Hybrid Coaching Works Better */}
-      <section className="w-full bg-warm-white py-20 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto">
+      <AuroraBackground className="py-20 px-6 md:px-12">
+        <div className="max-w-7xl mx-auto relative z-10">
           <h2 className="section-heading text-center mb-16 text-foreground">Why Hybrid Coaching Works Better</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             
@@ -192,12 +193,12 @@ const Landing = () => {
 
           </div>
         </div>
-      </section>
+      </AuroraBackground>
 
       {/* Section 4: Waitlist Signup */}
-      <section className="relative">
+      <AuroraBackground className="h-screen">
         <WaitlistFormNew />
-      </section>
+      </AuroraBackground>
     </div>;
 };
 export default Landing;
