@@ -115,11 +115,6 @@ export default {
 				'glow-pulse': {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.6' }
-				},
-				'aurora': {
-					'0%': { backgroundPosition: '50% 50%, 50% 50%' },
-					'50%': { backgroundPosition: '350% 50%, 350% 50%' },
-					'100%': { backgroundPosition: '50% 50%, 50% 50%' }
 				}
 			},
 			animation: {
@@ -128,8 +123,7 @@ export default {
 				'neural-flow': 'neural-flow 3s ease-in-out infinite',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'scale-in': 'scale-in 0.4s ease-out',
-				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
-				'aurora': 'aurora 60s linear infinite'
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite'
 			}
 		}
 	},

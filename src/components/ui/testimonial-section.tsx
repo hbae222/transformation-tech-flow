@@ -11,7 +11,7 @@ export const TestimonialSection = () => {
   ];
 
   return (
-    <div className="bg-transparent rounded-2xl p-8 max-w-md mx-auto">
+    <div className="bg-slate-800 rounded-2xl p-8 max-w-md mx-auto">
       <div className="flex items-center justify-center mb-6">
         <div className="flex -space-x-2">
           {avatars.map((avatar, index) => (
@@ -34,8 +34,8 @@ export const TestimonialSection = () => {
         ))}
       </div>
       
-      <p className="text-foreground text-xl font-semibold text-center">
-        100+ users
+      <p className="text-white text-xl font-semibold text-center">
+        7291 makers ship faster
       </p>
     </div>
   );
