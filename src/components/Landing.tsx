@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { VideoSection } from "@/components/sections/VideoSection";
 import { HybridCoachingSection } from "@/components/sections/HybridCoachingSection";
 import { WaitlistSection } from "@/components/sections/WaitlistSection";
+import { FooterSection } from "@/components/sections/FooterSection";
 
 const Landing = () => {
   return (
@@ -21,6 +22,9 @@ const Landing = () => {
         {/* Section 4: Waitlist Signup */}
         <WaitlistSection />
       </div>
+      
+      {/* Footer */}
+      <FooterSection />
     </div>
   );
 };
