@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Play, Brain, Target, Users, ArrowRight, Zap, MessageCircle, TrendingUp } from 'lucide-react';
-import { WaitlistForm } from "@/components/ui/waitlist-form-1";
+import { BackgroundBeamsDemo } from "@/components/ui/waitlist-background-beams";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
 import { Feature } from "@/components/ui/feature-with-image-comparison";
 import heroBrain from '@/assets/hero-brain.jpg';
@@ -102,9 +102,9 @@ const Landing = () => {
 
       {/* Section 4: Waitlist Signup */}
       <section className="py-32 bg-warm-white-subtle relative">
-        <div className="max-w-2xl mx-auto px-6 text-center relative z-10">
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <div className="animate-fade-in">
-            <WaitlistForm />
+            <BackgroundBeamsDemo />
           </div>
         </div>
       </section>
