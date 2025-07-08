@@ -2,23 +2,27 @@ import React from 'react';
 import { Play } from 'lucide-react';
 import { TestimonialSection } from "@/components/ui/testimonial-section";
 import { motion } from "framer-motion";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import videoPreview from '@/assets/video-preview.jpg';
 
 export const VideoSection = () => {
+  const { ref, isIntersecting } = useIntersectionObserver({ threshold: 0.2 });
+
   return (
     <motion.div 
-      className="max-w-4xl mx-auto px-6 text-center mb-32 md:mb-40"
+      ref={ref}
+      className="max-w-4xl mx-auto px-6 text-center mb-32 md:mb-40 will-change-transform"
+      style={{ contain: 'layout style' }}
       initial={{ opacity: 0, y: 80 }}
-      whileInView={{ 
+      animate={isIntersecting ? { 
         opacity: 1, 
         y: 0,
         transition: { duration: 0.8, ease: "easeOut" }
-      }}
+      } : {}}
       whileHover={{
         y: -20,
         transition: { duration: 0.3, ease: "easeOut" }
       }}
-      viewport={{ once: false, amount: 0.2 }}
     >
       <motion.h2 
         initial={{ opacity: 0, y: 30 }}
