@@ -5,7 +5,7 @@ import { Play, Brain, Target, Users, ArrowRight, Zap, MessageCircle, TrendingUp 
 import heroBrain from '@/assets/hero-brain.jpg';
 import videoPreview from '@/assets/video-preview.jpg';
 const Landing = () => {
-  return <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+  return <div className="min-h-screen gradient-background text-foreground overflow-x-hidden">
       {/* Section 1: Fullscreen Hero */}
       <section className="relative min-h-screen flex items-center justify-start bg-black overflow-hidden">
         {/* Background Video */}
@@ -26,20 +26,20 @@ const Landing = () => {
         
         {/* Hero Content */}
         <div className="relative z-10 text-left max-w-2xl mx-auto px-6 ml-12">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8 animate-fade-in text-slate-950">
+          <h1 className="hero-text mb-6 animate-fade-in text-slate-950">
             Build Better Focus in 30 Days
           </h1>
           
-          <p style={{
-          animationDelay: '0.2s'
-        }} className="text-xl md:text-2xl mb-12 max-w-lg leading-relaxed animate-fade-in text-slate-400">
+          <p className="hero-subtitle mb-8 max-w-lg animate-fade-in text-slate-400" style={{
+            animationDelay: '0.2s'
+          }}>
             Weekly coaching. Daily AI check-ins. A new hybrid system designed to help ADHD brains improve faster.
           </p>
           
           {/* Pill Badges */}
-          <div className="flex flex-wrap justify-start gap-4 mb-12 animate-scale-in" style={{
-          animationDelay: '0.4s'
-        }}>
+          <div className="flex flex-wrap justify-start gap-4 mb-8 animate-scale-in" style={{
+            animationDelay: '0.4s'
+          }}>
             <div className="pill-badge">
               <Users className="w-4 h-4 mr-2" />
               Weekly Coaching
@@ -55,30 +55,30 @@ const Landing = () => {
           </div>
           
           {/* CTA Button */}
-          <Button size="lg" variant="hero" className="animate-scale-in group" style={{
-          animationDelay: '0.6s'
-        }}>
+          <button className="cta-button animate-scale-in group" style={{
+            animationDelay: '0.6s'
+          }}>
             Join Waitlist
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          </button>
         </div>
       </section>
 
       {/* Section 2: Video Demo Preview */}
-      <section className="py-24 bg-card/30">
+      <section className="py-32 bg-warm-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in">See How It Works</h2>
-          <p className="text-muted-foreground text-lg mb-8 animate-fade-in">
+          <h2 className="section-heading mb-4 animate-fade-in">See How It Works</h2>
+          <p className="text-muted-foreground text-lg mb-12 animate-fade-in">
             Watch how our proven method builds focus, habits, and clarity - in under 2 minutes.
           </p>
           
-          <div className="relative group cursor-pointer animate-scale-in">
-            <div className="relative overflow-hidden rounded-2xl shadow-card-dark hover:shadow-neural transition-all duration-500">
+          <div className="video-container relative group cursor-pointer animate-scale-in">
+            <div className="relative overflow-hidden rounded-2xl shadow-card-dark hover:shadow-hover transition-all duration-500">
               <img src={videoPreview} alt="Product demo preview" className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" />
               
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
-                <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-glow-primary animate-glow-pulse">
+                <div className="play-button w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-glow-primary">
                   <Play className="w-8 h-8 text-primary-foreground ml-1" />
                 </div>
               </div>
@@ -88,15 +88,18 @@ const Landing = () => {
       </section>
 
       {/* Section 3: Why Hybrid Coaching Works Better */}
-      <section className="w-full bg-white py-16 px-6 md:px-12">
+      <section className="w-full bg-warm-white py-20 px-6 md:px-12">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Why Hybrid Coaching Works Better</h2>
+          <h2 className="section-heading text-center mb-16 text-foreground">Why Hybrid Coaching Works Better</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             
             {/* Column 1 */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-foreground">🧠 Human Coaching</h3>
-              <ul className="space-y-2 text-gray-700">
+            <div className="benefit-card">
+              <div className="flex items-center justify-center mb-4">
+                <div className="text-4xl">🧠</div>
+              </div>
+              <h3 className="text-xl font-semibold mb-6 text-foreground">Human Coaching</h3>
+              <ul className="space-y-3 text-muted-foreground">
                 <li>Deep, personal insight</li>
                 <li>Real accountability</li>
                 <li>Tailored expert feedback</li>
@@ -106,9 +109,12 @@ const Landing = () => {
             </div>
 
             {/* Column 2 */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-foreground">⚠️ Weekly-Only Limits</h3>
-              <ul className="space-y-2 text-gray-700">
+            <div className="benefit-card">
+              <div className="flex items-center justify-center mb-4">
+                <div className="text-4xl">⚠️</div>
+              </div>
+              <h3 className="text-xl font-semibold mb-6 text-foreground">Weekly-Only Limits</h3>
+              <ul className="space-y-3 text-muted-foreground">
                 <li>Midweek momentum drops</li>
                 <li>No daily tracking</li>
                 <li>Slow course correction</li>
@@ -118,9 +124,12 @@ const Landing = () => {
             </div>
 
             {/* Column 3 */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-foreground">🚀 Hybrid Coaching</h3>
-              <ul className="space-y-2 text-gray-700">
+            <div className="benefit-card">
+              <div className="flex items-center justify-center mb-4">
+                <div className="text-4xl">🚀</div>
+              </div>
+              <h3 className="text-xl font-semibold mb-6 text-foreground">Hybrid Coaching</h3>
+              <ul className="space-y-3 text-muted-foreground">
                 <li>Daily check-ins = steady progress</li>
                 <li>Instant feedback = fewer mistakes</li>
                 <li>Routine reinforcement = faster learning</li>
@@ -134,25 +143,29 @@ const Landing = () => {
       </section>
 
       {/* Section 4: Waitlist Signup */}
-      <section className="py-24 bg-white relative">
+      <section className="py-32 bg-warm-white-subtle relative">
         
         <div className="max-w-2xl mx-auto px-6 text-center relative z-10">
-          <div className="mb-8 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+          <div className="mb-12 animate-fade-in">
+            <h2 className="section-heading mb-6 text-foreground">
               Join the Waitlist
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground leading-relaxed">
               We limit each cohort to 50 people to keep coaching personal and effective.
             </p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto animate-scale-in" style={{
-          animationDelay: '0.2s'
-        }}>
-            <Input type="email" placeholder="Enter your email" className="bg-input border-border text-foreground placeholder:text-muted-foreground" />
-            <Button variant="neural" className="whitespace-nowrap">
+            animationDelay: '0.2s'
+          }}>
+            <input 
+              type="email" 
+              placeholder="Enter your email" 
+              className="input-field flex-1"
+            />
+            <button className="cta-button whitespace-nowrap">
               Join Waitlist
-            </Button>
+            </button>
           </div>
         </div>
       </section>

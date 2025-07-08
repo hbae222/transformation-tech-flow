@@ -24,6 +24,8 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				'warm-white': 'hsl(var(--warm-white))',
+				'warm-white-subtle': 'hsl(var(--warm-white-subtle))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
@@ -51,23 +53,30 @@ export default {
 				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					foreground: 'hsl(var(--card-foreground))',
+					hover: 'hsl(var(--card-hover))'
 				}
 			},
 			backgroundImage: {
 				'gradient-neural': 'var(--gradient-neural)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-mesh': 'var(--gradient-mesh)'
+				'gradient-mesh': 'var(--gradient-mesh)',
+				'gradient-cta': 'var(--gradient-cta)',
+				'gradient-background': 'var(--gradient-background)'
 			},
 			boxShadow: {
 				'glow-primary': 'var(--glow-primary)',
 				'glow-accent': 'var(--glow-accent)',
+				'glow-focus': 'var(--glow-focus)',
 				'neural': 'var(--shadow-neural)',
-				'card-dark': 'var(--shadow-card)'
+				'card-dark': 'var(--shadow-card)',
+				'hover': 'var(--shadow-hover)',
+				'subtle': 'var(--shadow-subtle)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
-				'glow': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+				'glow': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+				'hover': 'cubic-bezier(0.4, 0, 0.2, 1)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
