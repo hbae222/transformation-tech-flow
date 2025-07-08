@@ -224,8 +224,8 @@ All colors MUST be HSL for consistency and theme switching.
   }
   
   .benefit-card {
-    @apply bg-warm-white rounded-lg p-6 shadow-subtle border border-border/50;
-    @apply transition-hover hover:shadow-hover hover:scale-105 hover:bg-card-hover;
+    @apply bg-white rounded-lg p-6 shadow-lg border border-gray-100;
+    @apply transition-hover hover:shadow-xl hover:scale-105;
   }
   
   .cta-button {

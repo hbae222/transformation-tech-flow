@@ -16,10 +16,10 @@ export const WaitlistFormCurved = () => {
       <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-12 md:p-16">
         <div className="text-center mb-8">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground mb-4">
-            Join our waitlist
+            Join the Waitlist
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Be the first to access new features. Enter your email below to join the waitlist.
+            We are limiting the cohort spots to 50 max.
           </p>
         </div>
         

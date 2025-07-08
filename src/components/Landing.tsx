@@ -121,7 +121,7 @@ const Landing = () => {
               viewport={{ once: true, margin: "-100px" }}
               className="video-container relative group cursor-pointer"
             >
-              <div className="relative overflow-hidden rounded-2xl shadow-card-dark hover:shadow-hover transition-all duration-500">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500">
                 <img src={videoPreview} alt="Product demo preview" className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" />
                 
                 {/* Play Button Overlay */}
@@ -152,10 +152,11 @@ const Landing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
-              className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground text-center mb-16"
+              className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground text-center mb-16 leading-tight"
               style={{
                 textShadow: "0 0 20px rgba(139, 69, 19, 0.1)",
-                filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))"
+                filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))",
+                lineHeight: "1.1"
               }}
             >
               Why Hybrid Coaching Works Better
