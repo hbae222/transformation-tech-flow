@@ -23,23 +23,23 @@ export const WaitlistFormCurved = () => {
           </p>
         </div>
         
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <Input
             type="email"
             placeholder="Your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="flex-1 h-14 px-6 text-lg rounded-2xl border-gray-200 focus:border-gray-400 focus:ring-0"
+            className="h-16 px-6 text-xl rounded-2xl border-gray-200 focus:border-gray-400 focus:ring-0 text-center placeholder:text-center"
           />
           <Button 
             type="submit"
-            className="relative group h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-2xl whitespace-nowrap overflow-hidden"
+            className="relative group h-16 px-12 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg rounded-2xl w-full"
           >
             {/* Animated outline effect */}
             <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-primary to-primary rounded-2xl blur-sm opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt -z-10"></div>
             <div className="absolute inset-0 rounded-2xl border-2 border-primary opacity-0 animate-pulse-border group-hover:opacity-100 transition-opacity duration-300"></div>
-            <span className="relative z-10">Join</span>
+            <span className="relative z-10">Apply</span>
           </Button>
         </form>
       </div>

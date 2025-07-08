@@ -7,8 +7,8 @@ export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-start bg-white overflow-hidden">
       {/* Background Video with Parallax */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden parallax-slow">
-        <iframe 
+      <div className="absolute inset-0 w-full h-full overflow-hidden parallax-slow gpu-accelerated will-change-transform">
+        <iframe
           src="https://player.cloudinary.com/embed/?cloud_name=djjokty1s&public_id=ADHD_Header_Video_2_dofrcn&profile=cld-default&autoplay=true&loop=true&muted=true&controls=false" 
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-110"
           style={{
@@ -26,7 +26,7 @@ export const HeroSection = () => {
       
       {/* Hero Content with Enhanced Parallax */}
       <motion.div 
-        className="relative z-10 text-left max-w-3xl mx-auto px-6 ml-12 parallax-medium"
+        className="relative z-10 text-left max-w-3xl mx-auto px-6 ml-12 parallax-medium gpu-accelerated will-change-transform"
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}

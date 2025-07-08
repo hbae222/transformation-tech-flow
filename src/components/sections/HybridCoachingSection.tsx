@@ -40,7 +40,7 @@ export const HybridCoachingSection = () => {
 
   return (
     <motion.div 
-      className="max-w-7xl mx-auto px-6 md:px-12 mb-32 md:mb-40"
+      className="max-w-7xl mx-auto px-6 md:px-12 mb-32 md:mb-40 gpu-accelerated will-change-transform"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ 
         opacity: 1, 
