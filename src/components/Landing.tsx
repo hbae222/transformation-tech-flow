@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Play, Brain, Target, Users, ArrowRight, Zap, MessageCircle, TrendingUp } from 'lucide-react';
 import { BackgroundBeamsDemo } from "@/components/ui/waitlist-background-beams";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
-import { Feature } from "@/components/ui/feature-with-image-comparison";
+import { FeatureDemo } from "@/components/ui/feature-demo";
 import heroBrain from '@/assets/hero-brain.jpg';
 import videoPreview from '@/assets/video-preview.jpg';
 const Landing = () => {
@@ -98,7 +98,7 @@ const Landing = () => {
       </section>
 
       {/* Section 3: Why Hybrid Coaching Works Better */}
-      <Feature />
+      <FeatureDemo />
 
       {/* Section 4: Waitlist Signup */}
       <section className="py-32 bg-warm-white-subtle relative">
