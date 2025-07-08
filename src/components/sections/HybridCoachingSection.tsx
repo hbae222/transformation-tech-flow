@@ -84,7 +84,7 @@ export const HybridCoachingSection = () => {
                 <div className="text-4xl">{benefit.emoji}</div>
               </div>
             }
-            className={`${index === 2 ? 'shadow-pink' : ''} benefit-card`}
+            className={`${index === 2 ? 'md:col-span-2 shadow-pink' : ''} benefit-card`}
           />
         ))}
       </BentoGrid>
