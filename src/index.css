@@ -9,14 +9,14 @@ All colors MUST be HSL for consistency and theme switching.
 @layer base {
   :root {
     /* Aurora Background Variables */
-    --white: 255 255 255;
-    --black: 0 0 0;
+    --white: #ffffff;
+    --black: #000000;
     --transparent: transparent;
-    --blue-500: 59 130 246;
-    --indigo-300: 165 180 252;
-    --blue-300: 147 197 253;
-    --violet-200: 196 181 253;
-    --blue-400: 96 165 250;
+    --blue-500: #3b82f6;
+    --indigo-300: #a5b4fc;
+    --blue-300: #93c5fd;
+    --violet-200: #c4b5fd;
+    --blue-400: #60a5fa;
 
     /* Core Light Theme */
     --background: 0 0% 100%;
