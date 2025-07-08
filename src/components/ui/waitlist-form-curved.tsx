@@ -30,7 +30,7 @@ export const WaitlistFormCurved = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="h-14 px-6 text-lg rounded-2xl border-gray-200 focus:border-gray-400 focus:ring-0 text-center placeholder:text-center"
+            className="h-14 px-6 text-lg rounded-2xl border-gray-200 focus:border-gray-400 focus:ring-0 text-center placeholder:text-center max-w-md mx-auto"
           />
           <div className="flex justify-center">
             <GradientButton 
