@@ -19,7 +19,7 @@ export const TestimonialSection = () => {
               key={index}
               src={avatar}
               alt={`User ${index + 1}`}
-              className="w-12 h-12 rounded-full border-2 border-white"
+              className="w-12 h-12 rounded-full border-2 border-white object-cover"
             />
           ))}
         </div>

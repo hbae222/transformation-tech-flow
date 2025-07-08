@@ -19,8 +19,8 @@ All colors MUST be HSL for consistency and theme switching.
     --blue-400: #60a5fa;
 
     /* Core Light Theme */
-    --background: 0 0% 99.5%;
-    --foreground: 0 0% 7%; /* Deep gray instead of pure black */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%; /* Pure black instead of gray */
 
     /* Cards & Surfaces */
     --card: 0 0% 99%;
@@ -205,7 +205,7 @@ All colors MUST be HSL for consistency and theme switching.
   
   .hero-text {
     @apply text-6xl md:text-7xl lg:text-8xl font-bold;
-    @apply bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent;
     line-height: 1.2; /* Tighter line spacing */
     letter-spacing: -0.02em; /* Subtle letter spacing */
   }
