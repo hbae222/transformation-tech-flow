@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Play, Brain, Target, Users, ArrowRight, Zap, MessageCircle, TrendingUp } from 'lucide-react';
+import { SaveButton } from "@/components/ui/save-button";
 import { WaitlistFormNew } from "@/components/ui/waitlist-form-new";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
 import { AuroraBackground } from "@/components/ui/aurora-background";
@@ -58,12 +59,12 @@ const Landing = () => {
           </div>
           
           {/* CTA Button */}
-          <button className="cta-button animate-scale-in group min-w-fit px-8 whitespace-nowrap" style={{
+          <SaveButton className="animate-scale-in group min-w-fit px-8 whitespace-nowrap" style={{
             animationDelay: '0.6s'
           }}>
             Join Waitlist
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </SaveButton>
         </div>
       </section>
 
