@@ -2,9 +2,8 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Play, Brain, Target, Users, ArrowRight, Zap, MessageCircle, TrendingUp } from 'lucide-react';
-import { BackgroundBeamsDemo } from "@/components/ui/waitlist-background-beams";
+import { WaitlistForm } from "@/components/ui/waitlist-form-1";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
-import { FeatureDemo } from "@/components/ui/feature-demo";
 import heroBrain from '@/assets/hero-brain.jpg';
 import videoPreview from '@/assets/video-preview.jpg';
 const Landing = () => {
@@ -98,13 +97,110 @@ const Landing = () => {
       </section>
 
       {/* Section 3: Why Hybrid Coaching Works Better */}
-      <FeatureDemo />
+      <section className="w-full bg-warm-white py-20 px-6 md:px-12">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="section-heading text-center mb-16 text-foreground">Why Hybrid Coaching Works Better</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            
+            {/* Column 1 */}
+            <div className="benefit-card">
+              <div className="flex items-center justify-center mb-4">
+                <div className="text-4xl">🧠</div>
+              </div>
+              <h3 className="text-xl font-semibold mb-6 text-foreground">Human Coaching</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Deep, personal insight</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Real accountability</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Tailored expert feedback</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Emotional motivation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Strategic support</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 2 */}
+            <div className="benefit-card">
+              <div className="flex items-center justify-center mb-4">
+                <div className="text-4xl">⚠️</div>
+              </div>
+              <h3 className="text-xl font-semibold mb-6 text-foreground">Weekly-Only Limits</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Midweek momentum drops</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>No daily tracking</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Slow course correction</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Motivation spikes, then fades</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Too spaced for ADHD support</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3 */}
+            <div className="benefit-card">
+              <div className="flex items-center justify-center mb-4">
+                <div className="text-4xl">🚀</div>
+              </div>
+              <h3 className="text-xl font-semibold mb-6 text-foreground">Hybrid Coaching</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Daily check-ins = steady progress</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Instant feedback = fewer mistakes</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Routine reinforcement = faster learning</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Less slipping = more consistency</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary mt-1">•</span>
+                  <span>Smarter coaching = better results</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       {/* Section 4: Waitlist Signup */}
       <section className="py-32 bg-warm-white-subtle relative">
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <div className="max-w-2xl mx-auto px-6 text-center relative z-10">
           <div className="animate-fade-in">
-            <BackgroundBeamsDemo />
+            <WaitlistForm />
           </div>
         </div>
       </section>
