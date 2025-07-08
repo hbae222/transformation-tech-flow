@@ -15,11 +15,14 @@ export const HeroSection = () => {
   };
   return (
     <section className="relative min-h-screen flex items-center justify-start bg-white overflow-hidden">
+      {/* White background to prevent black flash */}
+      <div className="absolute inset-0 bg-white"></div>
+      
       {/* Optimized Background Video */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <iframe 
           src="https://player.cloudinary.com/embed/?cloud_name=djjokty1s&public_id=ADHD_Header_Video_2_dofrcn&profile=cld-default&autoplay=true&loop=true&muted=true&controls=false&quality=auto" 
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
           style={{
             width: '100vw',
             height: '56.25vw',
@@ -28,14 +31,14 @@ export const HeroSection = () => {
           }}
           allow="autoplay; muted" 
           frameBorder="0"
-          loading="lazy"
+          loading="eager"
           title="Hero Background Video"
         />
       </div>
       
       {/* Hero Content */}
       <motion.div 
-        className="relative z-10 text-left max-w-3xl mx-auto px-6 ml-12"
+        className="relative z-10 text-left max-w-3xl mx-auto px-4 md:px-6 md:ml-12 flex flex-col justify-center min-h-screen py-8"
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}

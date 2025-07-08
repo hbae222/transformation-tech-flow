@@ -269,13 +269,13 @@ All colors MUST be HSL for consistency and theme switching.
   }
   
   .hero-text {
-    @apply text-6xl md:text-7xl lg:text-8xl font-bold text-foreground;
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground;
     line-height: 1.2; /* Tighter line spacing */
     letter-spacing: -0.02em; /* Subtle letter spacing */
   }
   
   .hero-subtitle {
-    @apply text-xl md:text-2xl leading-relaxed;
+    @apply text-lg sm:text-xl md:text-2xl leading-relaxed;
     letter-spacing: 0.5px; /* Subtle letter spacing for refinement */
     line-height: 1.4;
   }
