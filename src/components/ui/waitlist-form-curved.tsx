@@ -3,11 +3,12 @@ import { Input } from "@/components/ui/input";
 import GradientButton from "@/components/ui/button-1";
 
 export const WaitlistFormCurved = () => {
+  const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Email submitted:', email);
+    console.log('Form submitted:', { fullName, email });
     // Handle form submission here
   };
 
@@ -24,6 +25,14 @@ export const WaitlistFormCurved = () => {
         </div>
         
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+          <Input
+            type="text"
+            placeholder="Full Name"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            required
+            className="h-14 px-6 text-lg rounded-2xl border-gray-200 focus:border-gray-400 focus:ring-0 text-center placeholder:text-center max-w-md mx-auto"
+          />
           <Input
             type="email"
             placeholder="Email"
