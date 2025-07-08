@@ -9,12 +9,19 @@ const Landing = () => {
       {/* Section 1: Fullscreen Hero */}
       <section className="relative min-h-screen flex items-center justify-start bg-black overflow-hidden">
         {/* Background Video */}
-        <div className="absolute inset-0 w-full h-full">
-          <iframe src="https://player.cloudinary.com/embed/?cloud_name=djjokty1s&public_id=ADHD_Header_Video_2_dofrcn&profile=cld-default&autoplay=true&loop=true&muted=true&controls=false" className="w-full h-full object-cover" style={{
-          aspectRatio: '16/9',
-          minHeight: '100vh',
-          minWidth: '100%'
-        }} allow="autoplay; muted" frameBorder="0" />
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          <iframe 
+            src="https://player.cloudinary.com/embed/?cloud_name=djjokty1s&public_id=ADHD_Header_Video_2_dofrcn&profile=cld-default&autoplay=true&loop=true&muted=true&controls=false" 
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            style={{
+              width: '100vw',
+              height: '56.25vw',
+              minHeight: '100vh',
+              minWidth: '177.78vh'
+            }}
+            allow="autoplay; muted" 
+            frameBorder="0" 
+          />
         </div>
         
         {/* Hero Content */}
