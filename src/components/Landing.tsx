@@ -4,39 +4,35 @@ import { Input } from "@/components/ui/input";
 import { Play, Brain, Target, Users, ArrowRight, Zap, MessageCircle, TrendingUp } from 'lucide-react';
 import heroBrain from '@/assets/hero-brain.jpg';
 import videoPreview from '@/assets/video-preview.jpg';
-
 const Landing = () => {
-  return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+  return <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Section 1: Fullscreen Hero */}
       <section className="relative min-h-screen flex items-center justify-start bg-black overflow-hidden">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full">
-          <iframe
-            src="https://player.cloudinary.com/embed/?cloud_name=djjokty1s&public_id=ADHD_Header_Video_2_dofrcn&profile=cld-default&autoplay=true&loop=true&muted=true&controls=false"
-            className="w-full h-full object-cover"
-            style={{
-              aspectRatio: '16/9',
-              minHeight: '100vh',
-              minWidth: '100%',
-            }}
-            allow="autoplay; muted"
-            frameBorder="0"
-          />
+          <iframe src="https://player.cloudinary.com/embed/?cloud_name=djjokty1s&public_id=ADHD_Header_Video_2_dofrcn&profile=cld-default&autoplay=true&loop=true&muted=true&controls=false" className="w-full h-full object-cover" style={{
+          aspectRatio: '16/9',
+          minHeight: '100vh',
+          minWidth: '100%'
+        }} allow="autoplay; muted" frameBorder="0" />
         </div>
         
         {/* Hero Content */}
         <div className="relative z-10 text-left max-w-2xl mx-auto px-6 ml-12">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8 animate-fade-in text-white">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8 animate-fade-in text-slate-950">
             Build Better Focus in 30 Days
           </h1>
           
-          <p className="text-xl md:text-2xl text-white mb-12 max-w-lg leading-relaxed animate-fade-in" style={{animationDelay: '0.2s'}}>
+          <p className="text-xl md:text-2xl text-white mb-12 max-w-lg leading-relaxed animate-fade-in" style={{
+          animationDelay: '0.2s'
+        }}>
             Weekly coaching. Daily AI check-ins. A new hybrid system designed to help ADHD brains improve faster.
           </p>
           
           {/* Pill Badges */}
-          <div className="flex flex-wrap justify-start gap-4 mb-12 animate-scale-in" style={{animationDelay: '0.4s'}}>
+          <div className="flex flex-wrap justify-start gap-4 mb-12 animate-scale-in" style={{
+          animationDelay: '0.4s'
+        }}>
             <div className="pill-badge">
               <Users className="w-4 h-4 mr-2" />
               Weekly Coaching
@@ -52,12 +48,9 @@ const Landing = () => {
           </div>
           
           {/* CTA Button */}
-          <Button 
-            size="lg" 
-            variant="hero"
-            className="animate-scale-in group" 
-            style={{animationDelay: '0.6s'}}
-          >
+          <Button size="lg" variant="hero" className="animate-scale-in group" style={{
+          animationDelay: '0.6s'
+        }}>
             Join Waitlist
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
@@ -74,11 +67,7 @@ const Landing = () => {
           
           <div className="relative group cursor-pointer animate-scale-in">
             <div className="relative overflow-hidden rounded-2xl shadow-card-dark hover:shadow-neural transition-all duration-500">
-              <img 
-                src={videoPreview} 
-                alt="Product demo preview" 
-                className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+              <img src={videoPreview} alt="Product demo preview" className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" />
               
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
@@ -150,23 +139,16 @@ const Landing = () => {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto animate-scale-in" style={{animationDelay: '0.2s'}}>
-            <Input 
-              type="email" 
-              placeholder="Enter your email"
-              className="bg-input border-border text-foreground placeholder:text-muted-foreground"
-            />
-            <Button 
-              variant="neural"
-              className="whitespace-nowrap"
-            >
+          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto animate-scale-in" style={{
+          animationDelay: '0.2s'
+        }}>
+            <Input type="email" placeholder="Enter your email" className="bg-input border-border text-foreground placeholder:text-muted-foreground" />
+            <Button variant="neural" className="whitespace-nowrap">
               Join Waitlist
             </Button>
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Landing;
