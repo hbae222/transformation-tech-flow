@@ -6,6 +6,7 @@ import { SaveButton } from "@/components/ui/save-button";
 import { WaitlistFormNew } from "@/components/ui/waitlist-form-new";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
 import { AuroraBackground } from "@/components/ui/aurora-background";
+import { motion } from "framer-motion";
 import heroBrain from '@/assets/hero-brain.jpg';
 import videoPreview from '@/assets/video-preview.jpg';
 const Landing = () => {
@@ -30,53 +31,103 @@ const Landing = () => {
         
         {/* Hero Content */}
         <div className="relative z-10 text-left max-w-3xl mx-auto px-6 ml-12">
-          <h1 className="hero-text mb-6 animate-fade-in text-slate-950">
+          <motion.h1 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="hero-text mb-6 text-slate-950"
+          >
             Build Better Focus in 30 Days
-          </h1>
+          </motion.h1>
           
-          <p className="hero-subtitle mb-8 max-w-2xl animate-fade-in text-slate-400" style={{
-            animationDelay: '0.2s'
-          }}>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="hero-subtitle mb-8 max-w-2xl text-slate-400"
+          >
             Weekly coaching. Daily AI check-ins. A new hybrid system designed to help ADHD brains improve faster.
-          </p>
+          </motion.p>
           
           {/* Pill Badges */}
-          <div className="flex flex-wrap justify-start gap-4 mb-8 animate-scale-in" style={{
-            animationDelay: '0.4s'
-          }}>
-            <div className="pill-badge">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+            className="flex flex-wrap justify-start gap-4 mb-8"
+          >
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="pill-badge"
+            >
               <Users className="w-4 h-4 mr-2" />
               Weekly Coaching
-            </div>
-            <div className="pill-badge">
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="pill-badge"
+            >
               <MessageCircle className="w-4 h-4 mr-2" />
               Daily AI Nudges
-            </div>
-            <div className="pill-badge">
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              className="pill-badge"
+            >
               <TrendingUp className="w-4 h-4 mr-2" />
               10X Effective
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
           
           {/* CTA Button */}
-          <SaveButton className="animate-scale-in group min-w-fit px-8 whitespace-nowrap" style={{
-            animationDelay: '0.6s'
-          }}>
-            Join Waitlist
-            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-          </SaveButton>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+          >
+            <SaveButton className="group min-w-fit px-8 whitespace-nowrap">
+              Join Waitlist
+              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </SaveButton>
+          </motion.div>
         </div>
       </section>
 
       {/* Section 2: Video Demo Preview */}
       <AuroraBackground className="py-32">
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <h2 className="section-heading mb-4 animate-fade-in">See How It Works</h2>
-          <p className="text-muted-foreground text-lg mb-12 animate-fade-in">
+          <motion.h2 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="section-heading mb-4"
+          >
+            See How It Works
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-muted-foreground text-lg mb-12"
+          >
             Watch how our proven method builds focus, habits, and clarity - in under 2 minutes.
-          </p>
+          </motion.p>
           
-          <div className="video-container relative group cursor-pointer animate-scale-in">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="video-container relative group cursor-pointer"
+          >
             <div className="relative overflow-hidden rounded-2xl shadow-card-dark hover:shadow-hover transition-all duration-500">
               <img src={videoPreview} alt="Product demo preview" className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" />
               
@@ -87,110 +138,139 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
           
           {/* Testimonial Section - placed below video */}
-          <div className="mt-12">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="mt-12"
+          >
             <TestimonialSection />
-          </div>
+          </motion.div>
         </div>
       </AuroraBackground>
 
       {/* Section 3: Why Hybrid Coaching Works Better */}
       <AuroraBackground className="py-20 px-6 md:px-12">
         <div className="max-w-7xl mx-auto relative z-10">
-          <h2 className="section-heading text-center mb-16 text-foreground">Why Hybrid Coaching Works Better</h2>
+          <motion.h2 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="section-heading text-center mb-16 text-foreground"
+          >
+            Why Hybrid Coaching Works Better
+          </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             
             {/* Column 1 */}
-            <div className="benefit-card">
+            <motion.div 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="benefit-card"
+            >
               <div className="flex items-center justify-center mb-4">
                 <div className="text-4xl">🧠</div>
               </div>
               <h3 className="text-xl font-semibold mb-6 text-foreground">Human Coaching</h3>
               <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Deep, personal insight</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Real accountability</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Tailored expert feedback</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Emotional motivation</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Strategic support</span>
-                </li>
+                {[
+                  "Deep, personal insight",
+                  "Real accountability", 
+                  "Tailored expert feedback",
+                  "Emotional motivation",
+                  "Strategic support"
+                ].map((item, index) => (
+                  <motion.li 
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-start gap-2"
+                  >
+                    <span className="text-primary mt-1">•</span>
+                    <span>{item}</span>
+                  </motion.li>
+                ))}
               </ul>
-            </div>
+            </motion.div>
 
             {/* Column 2 */}
-            <div className="benefit-card">
+            <motion.div 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="benefit-card"
+            >
               <div className="flex items-center justify-center mb-4">
                 <div className="text-4xl">⚠️</div>
               </div>
               <h3 className="text-xl font-semibold mb-6 text-foreground">Weekly-Only Limits</h3>
               <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Midweek momentum drops</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>No daily tracking</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Slow course correction</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Motivation spikes, then fades</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Too spaced for ADHD support</span>
-                </li>
+                {[
+                  "Midweek momentum drops",
+                  "No daily tracking",
+                  "Slow course correction", 
+                  "Motivation spikes, then fades",
+                  "Too spaced for ADHD support"
+                ].map((item, index) => (
+                  <motion.li 
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-start gap-2"
+                  >
+                    <span className="text-primary mt-1">•</span>
+                    <span>{item}</span>
+                  </motion.li>
+                ))}
               </ul>
-            </div>
+            </motion.div>
 
             {/* Column 3 */}
-            <div className="benefit-card">
+            <motion.div 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="benefit-card"
+            >
               <div className="flex items-center justify-center mb-4">
                 <div className="text-4xl">🚀</div>
               </div>
               <h3 className="text-xl font-semibold mb-6 text-foreground">Hybrid Coaching</h3>
               <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Daily check-ins = steady progress</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Instant feedback = fewer mistakes</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Routine reinforcement = faster learning</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Less slipping = more consistency</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Smarter coaching = better results</span>
-                </li>
+                {[
+                  "Daily check-ins = steady progress",
+                  "Instant feedback = fewer mistakes",
+                  "Routine reinforcement = faster learning",
+                  "Less slipping = more consistency", 
+                  "Smarter coaching = better results"
+                ].map((item, index) => (
+                  <motion.li 
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-start gap-2"
+                  >
+                    <span className="text-primary mt-1">•</span>
+                    <span>{item}</span>
+                  </motion.li>
+                ))}
               </ul>
-            </div>
+            </motion.div>
 
           </div>
         </div>
@@ -198,7 +278,14 @@ const Landing = () => {
 
       {/* Section 4: Waitlist Signup */}
       <AuroraBackground className="h-screen">
-        <WaitlistFormNew />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <WaitlistFormNew />
+        </motion.div>
       </AuroraBackground>
     </div>;
 };
