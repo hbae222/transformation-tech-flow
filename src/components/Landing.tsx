@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Play, Brain, Target, Users, ArrowRight, Zap, MessageCircle, TrendingUp } from 'lucide-react';
 import { SaveButton } from "@/components/ui/save-button";
-import { WaitlistFormNew } from "@/components/ui/waitlist-form-new";
+import { WaitlistFormCurved } from "@/components/ui/waitlist-form-curved";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { motion } from "framer-motion";
@@ -259,14 +259,14 @@ const Landing = () => {
           </div>
 
           {/* Section 4: Waitlist Signup */}
-          <div className="py-6 md:py-8 flex items-center justify-center">
+          <div className="py-4 md:py-5 flex items-center justify-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true }}
             >
-              <WaitlistFormNew />
+              <WaitlistFormCurved />
             </motion.div>
           </div>
         </div>
