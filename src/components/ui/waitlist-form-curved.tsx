@@ -1,15 +1,51 @@
 import React, { useState } from 'react';
 import { Input } from "@/components/ui/input";
 import GradientButton from "@/components/ui/button-1";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 export const WaitlistFormCurved = () => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', { fullName, email });
-    // Handle form submission here
+    setIsLoading(true);
+
+    try {
+      const { error } = await supabase
+        .from('ADHD Website Waitlist')
+        .insert([
+          {
+            full_name: fullName,
+            email: email
+          }
+        ]);
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: "Success!",
+        description: "You've been added to the waitlist. We'll be in touch soon!",
+      });
+
+      // Clear form
+      setFullName('');
+      setEmail('');
+    } catch (error: any) {
+      console.error('Error submitting to waitlist:', error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -52,9 +88,9 @@ export const WaitlistFormCurved = () => {
               }}
               width="300px"
               height="60px"
-              disabled={false}
+              disabled={isLoading}
             >
-              Apply
+              {isLoading ? 'Applying...' : 'Apply'}
             </GradientButton>
           </div>
         </form>
