@@ -12,7 +12,7 @@ const Landing = () => {
       <HeroSection />
 
       {/* Sections 2, 3, 4: Direct content */}
-      <div className="py-24 md:py-32 bg-gradient-background">
+      <div className="py-24 md:py-32 bg-white">
         {/* Section 2: Video Demo Preview */}
         <VideoSection />
 
