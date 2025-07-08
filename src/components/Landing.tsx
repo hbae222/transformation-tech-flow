@@ -23,9 +23,9 @@ const Landing = () => {
             Build Better Focus in 30 Days
           </h1>
           
-          <p className="text-xl md:text-2xl text-white mb-12 max-w-lg leading-relaxed animate-fade-in" style={{
+          <p style={{
           animationDelay: '0.2s'
-        }}>
+        }} className="text-xl md:text-2xl mb-12 max-w-lg leading-relaxed animate-fade-in text-slate-400">
             Weekly coaching. Daily AI check-ins. A new hybrid system designed to help ADHD brains improve faster.
           </p>
           
