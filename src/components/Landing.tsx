@@ -25,7 +25,9 @@ const Landing = () => {
               minWidth: '177.78vh'
             }}
             allow="autoplay; muted" 
-            frameBorder="0" 
+            frameBorder="0"
+            loading="lazy"
+            title="Hero Background Video"
           />
         </div>
         
@@ -34,7 +36,7 @@ const Landing = () => {
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="hero-text mb-6 text-slate-950"
           >
             Build Better Focus in 30 Days
@@ -43,7 +45,7 @@ const Landing = () => {
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
             className="hero-subtitle mb-8 max-w-2xl text-slate-400"
           >
             Weekly coaching. Daily AI check-ins. A new hybrid system designed to help ADHD brains improve faster.
@@ -53,43 +55,28 @@ const Landing = () => {
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+            transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}
             className="flex flex-wrap justify-start gap-4 mb-8"
           >
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="pill-badge"
-            >
+            <div className="pill-badge">
               <Users className="w-4 h-4 mr-2" />
               Weekly Coaching
-            </motion.div>
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="pill-badge"
-            >
+            </div>
+            <div className="pill-badge">
               <MessageCircle className="w-4 h-4 mr-2" />
               Daily AI Nudges
-            </motion.div>
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.7 }}
-              className="pill-badge"
-            >
+            </div>
+            <div className="pill-badge">
               <TrendingUp className="w-4 h-4 mr-2" />
               10X Effective
-            </motion.div>
+            </div>
           </motion.div>
           
           {/* CTA Button */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
           >
             <SaveButton className="group min-w-fit px-8 whitespace-nowrap">
               Join Waitlist
@@ -107,8 +94,8 @@ const Landing = () => {
             <motion.h2 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
               className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground text-center mb-4"
               style={{
                 textShadow: "0 0 20px rgba(139, 69, 19, 0.1)",
@@ -120,18 +107,18 @@ const Landing = () => {
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
               className="text-muted-foreground text-lg mb-12"
             >
               Watch how our proven method builds focus, habits, and clarity - in under 2 minutes.
             </motion.p>
             
             <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
               className="video-container relative group cursor-pointer"
             >
               <div className="relative overflow-hidden rounded-2xl shadow-card-dark hover:shadow-hover transition-all duration-500">
@@ -150,8 +137,8 @@ const Landing = () => {
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
               className="mt-12"
             >
               <TestimonialSection />
@@ -163,8 +150,8 @@ const Landing = () => {
             <motion.h2 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
               className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground text-center mb-16"
               style={{
                 textShadow: "0 0 20px rgba(139, 69, 19, 0.1)",
@@ -179,8 +166,8 @@ const Landing = () => {
               <motion.div 
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+                viewport={{ once: true, margin: "-100px" }}
                 className="benefit-card"
               >
                 <div className="flex items-center justify-center mb-4">
@@ -195,17 +182,13 @@ const Landing = () => {
                     "Emotional motivation",
                     "Strategic support"
                   ].map((item, index) => (
-                    <motion.li 
+                    <li 
                       key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                      viewport={{ once: true }}
                       className="flex items-start gap-2"
                     >
                       <span className="text-primary mt-1">•</span>
                       <span>{item}</span>
-                    </motion.li>
+                    </li>
                   ))}
                 </ul>
               </motion.div>
@@ -214,8 +197,8 @@ const Landing = () => {
               <motion.div 
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                viewport={{ once: true, margin: "-100px" }}
                 className="benefit-card"
               >
                 <div className="flex items-center justify-center mb-4">
@@ -230,17 +213,13 @@ const Landing = () => {
                     "Motivation spikes, then fades",
                     "Too spaced for ADHD support"
                   ].map((item, index) => (
-                    <motion.li 
+                    <li 
                       key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                      viewport={{ once: true }}
                       className="flex items-start gap-2"
                     >
                       <span className="text-primary mt-1">•</span>
                       <span>{item}</span>
-                    </motion.li>
+                    </li>
                   ))}
                 </ul>
               </motion.div>
@@ -249,8 +228,8 @@ const Landing = () => {
               <motion.div 
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+                viewport={{ once: true, margin: "-100px" }}
                 className="benefit-card"
               >
                 <div className="flex items-center justify-center mb-4">
@@ -265,17 +244,13 @@ const Landing = () => {
                     "Less slipping = more consistency", 
                     "Smarter coaching = better results"
                   ].map((item, index) => (
-                    <motion.li 
+                    <li 
                       key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                      viewport={{ once: true }}
                       className="flex items-start gap-2"
                     >
                       <span className="text-primary mt-1">•</span>
                       <span>{item}</span>
-                    </motion.li>
+                    </li>
                   ))}
                 </ul>
               </motion.div>

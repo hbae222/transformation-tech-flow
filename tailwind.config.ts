@@ -136,7 +136,7 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out',
 				'scale-in': 'scale-in 0.4s ease-out',
 				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
-				aurora: "aurora 60s linear infinite",
+				aurora: "aurora 30s linear infinite",
 			}
 		}
 	},

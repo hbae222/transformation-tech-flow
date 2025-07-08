@@ -159,6 +159,30 @@ All colors MUST be HSL for consistency and theme switching.
     transition: var(--transition-hover);
   }
   
+  /* Performance optimizations */
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  .will-change-opacity {
+    will-change: opacity;
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-aurora,
+    .animate-glow-pulse,
+    .animate-neural-flow {
+      animation: none;
+    }
+    
+    .transition-smooth,
+    .transition-glow,
+    .transition-hover {
+      transition: none;
+    }
+  }
+  
   .neural-border {
     border: 1px solid hsl(var(--border));
     background: linear-gradient(90deg, transparent, hsl(var(--primary)) 50%, transparent);
