@@ -103,7 +103,7 @@ const Landing = () => {
       <AuroraBackground className="py-32">
         <div className="relative z-10">
           {/* Section 2: Video Demo Preview */}
-          <div className="max-w-4xl mx-auto px-6 text-center mb-32">
+          <div className="max-w-4xl mx-auto px-6 text-center mb-40">
             <motion.h2 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ const Landing = () => {
           </div>
 
           {/* Section 3: Why Hybrid Coaching Works Better */}
-          <div className="max-w-7xl mx-auto px-6 md:px-12 mb-32">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 mb-16">
             <motion.h2 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -284,7 +284,7 @@ const Landing = () => {
           </div>
 
           {/* Section 4: Waitlist Signup */}
-          <div className="min-h-screen flex items-center justify-center">
+          <div className="py-20 flex items-center justify-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
