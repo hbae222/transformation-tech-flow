@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 
 export const HybridCoachingSection = () => {
   const benefits = [
@@ -63,36 +64,30 @@ export const HybridCoachingSection = () => {
       >
         Why Hybrid Coaching Works Better
       </motion.h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        
+      <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[30rem] md:grid-cols-3">
         {benefits.map((benefit, index) => (
-          <motion.div 
+          <BentoGridItem
             key={benefit.title}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 * (index + 1), ease: "easeOut" }}
-            viewport={{ once: true, margin: "-100px" }}
-            className={`benefit-card ${index === 2 ? 'shadow-pink' : ''}`}
-          >
-            <div className="flex items-center justify-center mb-4">
-              <div className="text-4xl">{benefit.emoji}</div>
-            </div>
-            <h3 className="text-xl font-semibold mb-6 text-foreground">{benefit.title}</h3>
-            <ul className="space-y-3 text-muted-foreground">
-              {benefit.items.map((item, itemIndex) => (
-                <li 
-                  key={itemIndex}
-                  className="flex items-start gap-2"
-                >
-                  <span className="text-primary mt-1">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+            title={benefit.title}
+            description={
+              <ul className="space-y-2 w-full">
+                {benefit.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="flex items-start text-center w-full">
+                    <span className="text-primary mr-2 mt-1 flex-shrink-0">•</span>
+                    <span className="text-muted-foreground text-sm leading-relaxed flex-1">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            }
+            header={
+              <div className="flex items-center justify-center h-16 bg-gradient-to-br from-muted/20 to-muted/10 rounded-lg mb-2">
+                <div className="text-4xl">{benefit.emoji}</div>
+              </div>
+            }
+            className={`benefit-card`}
+          />
         ))}
-
-      </div>
+      </BentoGrid>
     </motion.div>
   );
 };
