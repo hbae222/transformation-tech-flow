@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Play, Brain, Target, Users, ArrowRight, Zap, MessageCircle, TrendingUp } from 'lucide-react';
-import { WaitlistForm } from "@/components/ui/waitlist-form-1";
+import { WaitlistFormNew } from "@/components/ui/waitlist-form-new";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
 import heroBrain from '@/assets/hero-brain.jpg';
 import videoPreview from '@/assets/video-preview.jpg';
@@ -27,12 +27,12 @@ const Landing = () => {
         </div>
         
         {/* Hero Content */}
-        <div className="relative z-10 text-left max-w-2xl mx-auto px-6 ml-12">
+        <div className="relative z-10 text-left max-w-3xl mx-auto px-6 ml-12">
           <h1 className="hero-text mb-6 animate-fade-in text-slate-950">
             Build Better Focus in 30 Days
           </h1>
           
-          <p className="hero-subtitle mb-8 max-w-lg animate-fade-in text-slate-400" style={{
+          <p className="hero-subtitle mb-8 max-w-2xl animate-fade-in text-slate-400" style={{
             animationDelay: '0.2s'
           }}>
             Weekly coaching. Daily AI check-ins. A new hybrid system designed to help ADHD brains improve faster.
@@ -57,7 +57,7 @@ const Landing = () => {
           </div>
           
           {/* CTA Button */}
-          <button className="cta-button animate-scale-in group" style={{
+          <button className="cta-button animate-scale-in group min-w-fit px-8 whitespace-nowrap" style={{
             animationDelay: '0.6s'
           }}>
             Join Waitlist
@@ -86,13 +86,11 @@ const Landing = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Testimonial Section */}
-      <section className="py-16 bg-background">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <TestimonialSection />
+          
+          {/* Testimonial Section - placed below video */}
+          <div className="mt-12">
+            <TestimonialSection />
+          </div>
         </div>
       </section>
 
@@ -197,12 +195,8 @@ const Landing = () => {
       </section>
 
       {/* Section 4: Waitlist Signup */}
-      <section className="py-32 bg-warm-white-subtle relative">
-        <div className="max-w-2xl mx-auto px-6 text-center relative z-10">
-          <div className="animate-fade-in">
-            <WaitlistForm />
-          </div>
-        </div>
+      <section className="relative">
+        <WaitlistFormNew />
       </section>
     </div>;
 };
