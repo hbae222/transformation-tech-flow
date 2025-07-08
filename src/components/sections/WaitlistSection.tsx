@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 export const WaitlistSection = () => {
   return (
     <motion.div 
+      data-section="waitlist"
       className="py-4 md:py-6 flex items-center justify-center"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ 

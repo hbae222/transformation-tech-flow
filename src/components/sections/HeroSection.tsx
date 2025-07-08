@@ -4,6 +4,15 @@ import { SaveButton } from "@/components/ui/save-button";
 import { motion } from "framer-motion";
 
 export const HeroSection = () => {
+  const scrollToWaitlist = () => {
+    const waitlistSection = document.querySelector('[data-section="waitlist"]');
+    if (waitlistSection) {
+      waitlistSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
   return (
     <section className="relative min-h-screen flex items-center justify-start bg-white overflow-hidden">
       {/* Optimized Background Video */}
@@ -79,7 +88,10 @@ export const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
         >
-          <SaveButton className="group min-w-fit px-8 whitespace-nowrap">
+          <SaveButton 
+            className="group min-w-fit px-8 whitespace-nowrap"
+            onClick={scrollToWaitlist}
+          >
             Join the Limited Waitlist
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </SaveButton>
