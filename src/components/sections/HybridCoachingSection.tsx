@@ -70,11 +70,11 @@ export const HybridCoachingSection = () => {
             key={benefit.title}
             title={benefit.title}
             description={
-              <ul className="space-y-2">
+              <ul className="space-y-2 w-full">
                 {benefit.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-start">
-                    <span className="text-primary mr-2 mt-1">•</span>
-                    <span className="text-muted-foreground">{item}</span>
+                  <li key={itemIndex} className="flex items-start text-left w-full">
+                    <span className="text-primary mr-2 mt-1 flex-shrink-0">•</span>
+                    <span className="text-muted-foreground text-sm leading-relaxed flex-1">{item}</span>
                   </li>
                 ))}
               </ul>
