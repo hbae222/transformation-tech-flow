@@ -9,20 +9,35 @@ const Landing = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Section 1: Fullscreen Hero */}
-      <section className="relative min-h-screen flex items-center justify-center bg-black">
+      <section className="relative min-h-screen flex items-center justify-start bg-black overflow-hidden">
+        {/* Background Video */}
+        <div className="absolute inset-0 w-full h-full">
+          <iframe
+            src="https://player.cloudinary.com/embed/?cloud_name=djjokty1s&public_id=ADHD_Header_Video_2_dofrcn&profile=cld-default&autoplay=true&loop=true&muted=true&controls=false"
+            className="w-full h-full object-cover"
+            style={{
+              aspectRatio: '16/9',
+              minHeight: '100vh',
+              minWidth: '100%',
+            }}
+            allow="autoplay; muted"
+            frameBorder="0"
+          />
+          <div className="absolute inset-0 bg-black/20" />
+        </div>
         
         {/* Hero Content */}
-        <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
-          <h1 className="hero-text mb-8 animate-fade-in">
+        <div className="relative z-10 text-left max-w-2xl mx-auto px-6 ml-12">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8 animate-fade-in text-white">
             This is Coaching That Actually Works
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{animationDelay: '0.2s'}}>
+          <p className="text-xl md:text-2xl text-white mb-12 max-w-lg leading-relaxed animate-fade-in" style={{animationDelay: '0.2s'}}>
             Weekly support from a real coach, enhanced with daily 10-minute voice check-ins with instant AI feedback.
           </p>
           
           {/* Pill Badges */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12 animate-scale-in" style={{animationDelay: '0.4s'}}>
+          <div className="flex flex-wrap justify-start gap-4 mb-12 animate-scale-in" style={{animationDelay: '0.4s'}}>
             <div className="pill-badge">
               <Target className="w-4 h-4 mr-2" />
               Daily Clarity
