@@ -64,7 +64,7 @@ export const HybridCoachingSection = () => {
       >
         Why Hybrid Coaching Works Better
       </motion.h2>
-      <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[30rem] md:grid-cols-4">
+      <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[30rem] md:grid-cols-5">
         {benefits.map((benefit, index) => (
           <BentoGridItem
             key={benefit.title}
@@ -84,7 +84,7 @@ export const HybridCoachingSection = () => {
                 <div className="text-4xl">{benefit.emoji}</div>
               </div>
             }
-            className={`${index === 2 ? 'shadow-pink' : ''} benefit-card`}
+            className={`${index === 2 ? 'md:col-span-2 shadow-pink' : ''} benefit-card`}
           />
         ))}
       </BentoGrid>
