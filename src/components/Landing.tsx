@@ -10,9 +10,9 @@ import { motion } from "framer-motion";
 import heroBrain from '@/assets/hero-brain.jpg';
 import videoPreview from '@/assets/video-preview.jpg';
 const Landing = () => {
-  return <div className="min-h-screen gradient-background text-foreground overflow-x-hidden">
+  return <div className="min-h-screen bg-white text-foreground overflow-x-hidden">
       {/* Section 1: Fullscreen Hero */}
-      <section className="relative min-h-screen flex items-center justify-start bg-black overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-start bg-white overflow-hidden">
         {/* Background Video */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <iframe 
@@ -32,12 +32,18 @@ const Landing = () => {
         </div>
         
         {/* Hero Content */}
-        <div className="relative z-10 text-left max-w-3xl mx-auto px-6 ml-12">
+        <motion.div 
+          className="relative z-10 text-left max-w-3xl mx-auto px-6 ml-12"
+          style={{ y: 0 }}
+          whileInView={{ y: -20 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="hero-text mb-6 text-slate-950"
+            className="hero-text mb-6 text-black"
           >
             Build Better Focus in 30 Days
           </motion.h1>
@@ -83,20 +89,26 @@ const Landing = () => {
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </SaveButton>
           </motion.div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Sections 2, 3, 4: Seamless Aurora Background */}
       <AuroraBackground className="py-24 md:py-32">
         <div className="relative z-10">
           {/* Section 2: Video Demo Preview */}
-          <div className="max-w-4xl mx-auto px-6 text-center mb-32 md:mb-40">
+          <motion.div 
+            className="max-w-4xl mx-auto px-6 text-center mb-32 md:mb-40"
+            style={{ y: 0 }}
+            whileInView={{ y: -30 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+          >
             <motion.h2 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
-              className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-foreground via-foreground to-muted-foreground text-center mb-4"
+              className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold text-black text-center mb-4"
               style={{
                 textShadow: "0 0 20px rgba(139, 69, 19, 0.1)",
                 filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))"
@@ -143,16 +155,22 @@ const Landing = () => {
             >
               <TestimonialSection />
             </motion.div>
-          </div>
+          </motion.div>
 
           {/* Section 3: Why Hybrid Coaching Works Better */}
-          <div className="max-w-7xl mx-auto px-6 md:px-12 mb-32 md:mb-40">
+          <motion.div 
+            className="max-w-7xl mx-auto px-6 md:px-12 mb-32 md:mb-40"
+            style={{ y: 0 }}
+            whileInView={{ y: -40 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.1 }}
+          >
             <motion.h2 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true, margin: "-100px" }}
-              className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-foreground via-foreground to-muted-foreground text-center mb-16 leading-tight"
+              className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold text-black text-center mb-16 leading-tight"
               style={{
                 textShadow: "0 0 20px rgba(139, 69, 19, 0.1)",
                 filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))",
@@ -257,10 +275,16 @@ const Landing = () => {
               </motion.div>
 
             </div>
-          </div>
+          </motion.div>
 
           {/* Section 4: Waitlist Signup */}
-          <div className="py-8 md:py-12 flex items-center justify-center">
+          <motion.div 
+            className="py-8 md:py-12 flex items-center justify-center"
+            style={{ y: 0 }}
+            whileInView={{ y: -25 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+          >
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -269,7 +293,7 @@ const Landing = () => {
             >
               <WaitlistFormCurved />
             </motion.div>
-          </div>
+          </motion.div>
         </div>
       </AuroraBackground>
     </div>;

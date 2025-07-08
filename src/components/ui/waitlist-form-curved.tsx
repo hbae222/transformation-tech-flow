@@ -15,7 +15,7 @@ export const WaitlistFormCurved = () => {
     <div className="w-full max-w-6xl mx-auto p-12">
       <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-16 md:p-24">
         <div className="text-center mb-8">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-foreground via-foreground to-muted-foreground mb-4">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-4">
             Join the Waitlist
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
