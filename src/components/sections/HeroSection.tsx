@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-start bg-white overflow-hidden">
-      {/* Background Video */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden">
+      {/* Background Video with Parallax */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden parallax-slow">
         <iframe 
           src="https://player.cloudinary.com/embed/?cloud_name=djjokty1s&public_id=ADHD_Header_Video_2_dofrcn&profile=cld-default&autoplay=true&loop=true&muted=true&controls=false" 
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-110"
           style={{
             width: '100vw',
             height: '56.25vw',
@@ -24,12 +24,20 @@ export const HeroSection = () => {
         />
       </div>
       
-      {/* Hero Content */}
+      {/* Hero Content with Enhanced Parallax */}
       <motion.div 
-        className="relative z-10 text-left max-w-3xl mx-auto px-6 ml-12"
-        style={{ y: 0 }}
-        whileInView={{ y: -20 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative z-10 text-left max-w-3xl mx-auto px-6 ml-12 parallax-medium"
+        initial={{ opacity: 0, y: 60 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        whileInView={{ 
+          y: [0, -15, 0],
+          transition: { 
+            duration: 6, 
+            repeat: Infinity, 
+            ease: "easeInOut" 
+          }
+        }}
         viewport={{ once: false, amount: 0.3 }}
       >
         <motion.h1 

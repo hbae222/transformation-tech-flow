@@ -12,8 +12,8 @@ export const WaitlistFormCurved = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-12">
-      <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-16 md:p-24">
+    <div className="w-full max-w-7xl mx-auto p-16">
+      <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-20 md:p-32">
         <div className="text-center mb-8">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-4">
             Join the Waitlist
@@ -34,9 +34,12 @@ export const WaitlistFormCurved = () => {
           />
           <Button 
             type="submit"
-            className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-2xl whitespace-nowrap"
+            className="relative group h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-2xl whitespace-nowrap overflow-hidden"
           >
-            Join
+            {/* Animated outline effect */}
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-primary to-primary rounded-2xl blur-sm opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt -z-10"></div>
+            <div className="absolute inset-0 rounded-2xl border-2 border-primary opacity-0 animate-pulse-border group-hover:opacity-100 transition-opacity duration-300"></div>
+            <span className="relative z-10">Join</span>
           </Button>
         </form>
       </div>
