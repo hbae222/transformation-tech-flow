@@ -19,13 +19,13 @@ All colors MUST be HSL for consistency and theme switching.
     --blue-400: #60a5fa;
 
     /* Core Light Theme */
-    --background: 0 0% 100%;
+    --background: 0 0% 99.5%;
     --foreground: 0 0% 7%; /* Deep gray instead of pure black */
 
     /* Cards & Surfaces */
-    --card: 0 0% 98%;
+    --card: 0 0% 99%;
     --card-foreground: 0 0% 7%;
-    --card-hover: 0 0% 96%;
+    --card-hover: 0 0% 97.5%;
 
     --popover: 0 0% 98%;
     --popover-foreground: 0 0% 7%;

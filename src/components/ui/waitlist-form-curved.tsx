@@ -12,10 +12,10 @@ export const WaitlistFormCurved = () => {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto p-8">
-      <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-12">
+    <div className="w-full max-w-4xl mx-auto p-8">
+      <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-12 md:p-16">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-foreground to-muted-foreground mb-4">
             Join our waitlist
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
@@ -34,7 +34,7 @@ export const WaitlistFormCurved = () => {
           />
           <Button 
             type="submit"
-            className="h-14 px-8 bg-black hover:bg-gray-800 text-white font-semibold rounded-2xl whitespace-nowrap"
+            className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-2xl whitespace-nowrap"
           >
             Join
           </Button>
