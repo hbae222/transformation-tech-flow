@@ -100,10 +100,10 @@ const Landing = () => {
       </section>
 
       {/* Sections 2, 3, 4: Seamless Aurora Background */}
-      <AuroraBackground className="py-32">
+      <AuroraBackground className="py-16 md:py-24">
         <div className="relative z-10">
           {/* Section 2: Video Demo Preview */}
-          <div className="max-w-4xl mx-auto px-6 text-center mb-40">
+          <div className="max-w-4xl mx-auto px-6 text-center mb-20 md:mb-32">
             <motion.h2 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ const Landing = () => {
           </div>
 
           {/* Section 3: Why Hybrid Coaching Works Better */}
-          <div className="max-w-7xl mx-auto px-6 md:px-12 mb-16">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 mb-20 md:mb-28">
             <motion.h2 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -284,7 +284,7 @@ const Landing = () => {
           </div>
 
           {/* Section 4: Waitlist Signup */}
-          <div className="py-20 flex items-center justify-center">
+          <div className="py-12 md:py-16 flex items-center justify-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
