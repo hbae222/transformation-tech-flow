@@ -12,13 +12,13 @@ export const WaitlistFormCurved = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto p-16">
-      <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-20 md:p-32">
-        <div className="text-center mb-8">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-4">
+    <div className="w-full max-w-8xl mx-auto p-20 md:p-24">
+      <div className="bg-white rounded-3xl shadow-neural border border-gray-100 p-24 md:p-40">
+        <div className="text-center mb-12">
+          <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black mb-6">
             Join the Waitlist
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-gray-600 text-xl md:text-2xl leading-relaxed">
             We are limiting the cohort spots to 50 max.
           </p>
         </div>

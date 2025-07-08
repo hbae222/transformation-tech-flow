@@ -27,7 +27,7 @@ export const HybridCoachingSection = () => {
     },
     {
       emoji: "🚀",
-      title: "Hybrid Coaching",
+      title: "Hybrid Human + AI Coaching",
       items: [
         "Daily check-ins = steady progress",
         "Instant feedback = fewer mistakes",
@@ -72,7 +72,7 @@ export const HybridCoachingSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 * (index + 1), ease: "easeOut" }}
             viewport={{ once: true, margin: "-100px" }}
-            className="benefit-card"
+            className={`benefit-card ${index === 2 ? 'shadow-pink' : ''}`}
           >
             <div className="flex items-center justify-center mb-4">
               <div className="text-4xl">{benefit.emoji}</div>

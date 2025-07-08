@@ -50,7 +50,7 @@ export const VideoSection = () => {
         viewport={{ once: true, margin: "-100px" }}
         className="video-container relative group cursor-pointer"
       >
-        <div className="relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500">
+        <div className="relative overflow-hidden rounded-2xl shadow-neural hover:shadow-hover transition-all duration-500">
           <img src={videoPreview} alt="Product demo preview" className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" />
           
           {/* Play Button Overlay */}

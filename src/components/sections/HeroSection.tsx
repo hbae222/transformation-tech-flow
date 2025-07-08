@@ -86,7 +86,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
         >
           <SaveButton className="group min-w-fit px-8 whitespace-nowrap">
-            Join Waitlist
+            Join Limited Waitlist
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </SaveButton>
         </motion.div>
