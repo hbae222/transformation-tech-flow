@@ -4,10 +4,13 @@ import { Input } from "@/components/ui/input";
 import { Play, Brain, Target, Users, ArrowRight, Zap, MessageCircle, TrendingUp } from 'lucide-react';
 import { WaitlistForm } from "@/components/ui/waitlist-form-1";
 import { TestimonialSection } from "@/components/ui/testimonial-section";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 import heroBrain from '@/assets/hero-brain.jpg';
 import videoPreview from '@/assets/video-preview.jpg';
 const Landing = () => {
-  return <div className="min-h-screen gradient-background text-foreground overflow-x-hidden">
+  return (
+    <AuroraBackground className="min-h-screen text-foreground overflow-x-hidden">
+      <div className="w-full">
       {/* Section 1: Fullscreen Hero */}
       <section className="relative min-h-screen flex items-center justify-start bg-black overflow-hidden">
         {/* Background Video */}
@@ -85,14 +88,12 @@ const Landing = () => {
                 </div>
               </div>
             </div>
+            
+            {/* Testimonial Section - placed right below video */}
+            <div className="mt-12 animate-fade-in">
+              <TestimonialSection />
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* Testimonial Section */}
-      <section className="py-16 bg-background">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <TestimonialSection />
         </div>
       </section>
 
@@ -199,11 +200,13 @@ const Landing = () => {
       {/* Section 4: Waitlist Signup */}
       <section className="py-32 bg-warm-white-subtle relative">
         <div className="max-w-2xl mx-auto px-6 text-center relative z-10">
-          <div className="animate-fade-in">
+            <div className="animate-fade-in">
             <WaitlistForm />
           </div>
         </div>
       </section>
-    </div>;
+      </div>
+    </AuroraBackground>
+  );
 };
 export default Landing;
