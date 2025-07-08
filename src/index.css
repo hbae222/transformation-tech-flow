@@ -127,8 +127,9 @@ All colors MUST be HSL for consistency and theme switching.
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  html, body {
+    @apply bg-white text-foreground;
+    background-color: white !important;
   }
 }
 
