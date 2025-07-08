@@ -24,7 +24,7 @@ export const WaitlistFormCurved = () => {
           </p>
         </div>
         
-        <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <Input
             type="text"
             placeholder="Full Name"

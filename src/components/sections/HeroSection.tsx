@@ -33,15 +33,6 @@ export const HeroSection = () => {
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        whileInView={{ 
-          y: [0, -15, 0],
-          transition: { 
-            duration: 6, 
-            repeat: Infinity, 
-            ease: "easeInOut" 
-          }
-        }}
-        viewport={{ once: false, amount: 0.3 }}
       >
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
@@ -89,7 +80,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
         >
           <SaveButton className="group min-w-fit px-8 whitespace-nowrap">
-            Join Limited Waitlist
+            Join the Limited Waitlist
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </SaveButton>
         </motion.div>
