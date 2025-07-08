@@ -119,8 +119,6 @@ All colors MUST be HSL for consistency and theme switching.
     transform: translateY(-10px);
   }
 }
-  }
-}
 
 @layer base {
   * {
