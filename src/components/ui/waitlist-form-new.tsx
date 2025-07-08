@@ -46,7 +46,7 @@ function WaitlistFormNew() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-muted-foreground max-w-lg mx-auto my-2 text-sm text-center relative z-10"
+          className="text-muted-foreground max-w-lg mx-auto my-6 text-sm text-center relative z-10"
         >
           We limit each cohort to 50 people to keep coaching personal and effective.
         </motion.p>
@@ -57,7 +57,7 @@ function WaitlistFormNew() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           viewport={{ once: true }}
           onSubmit={handleSubmit} 
-          className="w-full space-y-4"
+          className="w-full space-y-6"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -70,7 +70,7 @@ function WaitlistFormNew() {
               placeholder="Enter your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full mt-4 relative z-10 transition-all duration-300 focus:scale-[1.02]"
+              className="w-full mt-6 relative z-10 transition-all duration-300 focus:scale-[1.02]"
               required
             />
           </motion.div>
@@ -80,12 +80,13 @@ function WaitlistFormNew() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
+            className="flex justify-center pt-4"
           >
             <SaveButton
               type="submit"
               loading={loading}
               success={success}
-              className="w-full mt-4 relative z-10"
+              className="w-auto px-12 mt-4 relative z-10"
             >
               {success ? "Added to Waitlist!" : "Join Waitlist"}
               <ArrowRight className="w-5 h-5 ml-2" />

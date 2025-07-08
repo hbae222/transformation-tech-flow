@@ -7,7 +7,7 @@ export const TestimonialSection = () => {
     "https://images.unsplash.com/photo-1494790108755-2616b68b1a85?w=64&h=64&fit=crop&crop=face&auto=format", 
     "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face&auto=format",
     "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&fit=crop&crop=face&auto=format",
-    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&h=64&fit=crop&crop=face&auto=format"
+    "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=64&h=64&fit=crop&crop=face&auto=format"
   ];
 
   return (
