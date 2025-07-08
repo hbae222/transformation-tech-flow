@@ -23,32 +23,31 @@ const Landing = () => {
             allow="autoplay; muted"
             frameBorder="0"
           />
-          <div className="absolute inset-0 bg-black/20" />
         </div>
         
         {/* Hero Content */}
         <div className="relative z-10 text-left max-w-2xl mx-auto px-6 ml-12">
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8 animate-fade-in text-white">
-            This is Coaching That Actually Works
+            Build Better Focus in 30 Days
           </h1>
           
           <p className="text-xl md:text-2xl text-white mb-12 max-w-lg leading-relaxed animate-fade-in" style={{animationDelay: '0.2s'}}>
-            Weekly support from a real coach, enhanced with daily 10-minute voice check-ins with instant AI feedback.
+            Weekly coaching. Daily AI check-ins. A new hybrid system designed to help ADHD brains improve faster.
           </p>
           
           {/* Pill Badges */}
           <div className="flex flex-wrap justify-start gap-4 mb-12 animate-scale-in" style={{animationDelay: '0.4s'}}>
             <div className="pill-badge">
-              <Target className="w-4 h-4 mr-2" />
-              Daily Clarity
+              <Users className="w-4 h-4 mr-2" />
+              Weekly Coaching
             </div>
             <div className="pill-badge">
-              <Users className="w-4 h-4 mr-2" />
-              Human Coach
+              <MessageCircle className="w-4 h-4 mr-2" />
+              Daily AI Nudges
             </div>
             <div className="pill-badge">
               <TrendingUp className="w-4 h-4 mr-2" />
-              8X Effectiveness
+              10X Effective
             </div>
           </div>
           
@@ -59,7 +58,7 @@ const Landing = () => {
             className="animate-scale-in group" 
             style={{animationDelay: '0.6s'}}
           >
-            Get Early Access
+            Join Waitlist
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
@@ -68,8 +67,9 @@ const Landing = () => {
       {/* Section 2: Video Demo Preview */}
       <section className="py-24 bg-card/30">
         <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in">See How It Works</h2>
           <p className="text-muted-foreground text-lg mb-8 animate-fade-in">
-            See how it works in 60 seconds
+            Watch how our proven method builds focus, habits, and clarity - in under 2 minutes.
           </p>
           
           <div className="relative group cursor-pointer animate-scale-in">
@@ -91,71 +91,62 @@ const Landing = () => {
         </div>
       </section>
 
-      {/* Section 3: Differentiation Grid */}
-      <section className="py-24 relative">
-        {/* Background Elements */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="w-full h-full bg-gradient-mesh" />
-        </div>
-        
-        <div className="max-w-6xl mx-auto px-6 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 animate-fade-in">
-            How We're Different
-          </h2>
-          
-          {/* Neural Connection Lines */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-px opacity-20">
-            <div className="neural-border" />
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-card-dark hover:shadow-neural transition-all duration-500 group animate-fade-in">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <MessageCircle className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">AI Daily Check-ins</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Every day, talk to your AI coach for 10 minutes. Get instant feedback and stay on track with your goals.
-              </p>
-            </div>
+      {/* Section 3: Why Hybrid Coaching Works Better */}
+      <section className="w-full bg-white py-16 px-6 md:px-12">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Why Hybrid Coaching Works Better</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             
-            {/* Card 2 */}
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-card-dark hover:shadow-neural transition-all duration-500 group animate-fade-in" style={{animationDelay: '0.2s'}}>
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <Brain className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Smart Insights</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                AI listens, nudges, and keeps you on track - instantly analyzing your progress patterns.
-              </p>
+            {/* Column 1 */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">🧠 Human Coaching</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>Deep, personal insight</li>
+                <li>Real accountability</li>
+                <li>Tailored expert feedback</li>
+                <li>Emotional motivation</li>
+                <li>Strategic support</li>
+              </ul>
             </div>
-            
-            {/* Card 3 */}
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-card-dark hover:shadow-neural transition-all duration-500 group animate-fade-in" style={{animationDelay: '0.4s'}}>
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <Users className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Human Connection</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Every week, fill in any gaps with a real human coach who understands your unique journey.
-              </p>
+
+            {/* Column 2 */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">⚠️ Weekly-Only Limits</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>Midweek momentum drops</li>
+                <li>No daily tracking</li>
+                <li>Slow course correction</li>
+                <li>Motivation spikes, then fades</li>
+                <li>Too spaced for ADHD support</li>
+              </ul>
             </div>
+
+            {/* Column 3 */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">🚀 Hybrid Coaching</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li>Daily check-ins = steady progress</li>
+                <li>Instant feedback = fewer mistakes</li>
+                <li>Routine reinforcement = faster learning</li>
+                <li>Less slipping = more consistency</li>
+                <li>Smarter coaching = better results</li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* Section 4: Waitlist Signup */}
-      <section className="py-24 bg-black relative">
+      <section className="py-24 bg-white relative">
         
         <div className="max-w-2xl mx-auto px-6 text-center relative z-10">
           <div className="mb-8 animate-fade-in">
-            <Zap className="w-12 h-12 text-primary mx-auto mb-4" />
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Get Early Access
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+              Join the Waitlist
             </h2>
             <p className="text-xl text-muted-foreground">
-              Be among the first to experience coaching that actually works.
+              We limit each cohort to 50 people to keep coaching personal and effective.
             </p>
           </div>
           
@@ -172,10 +163,6 @@ const Landing = () => {
               Join Waitlist
             </Button>
           </div>
-          
-          <p className="text-sm text-muted-foreground mt-6 animate-fade-in" style={{animationDelay: '0.4s'}}>
-            Join 500+ professionals already transforming their lives.
-          </p>
         </div>
       </section>
     </div>
