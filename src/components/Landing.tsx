@@ -284,7 +284,7 @@ const Landing = () => {
           </div>
 
           {/* Section 4: Waitlist Signup */}
-          <div className="py-12 md:py-16 flex items-center justify-center">
+          <div className="py-6 md:py-8 flex items-center justify-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
