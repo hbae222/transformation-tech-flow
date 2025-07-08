@@ -28,7 +28,7 @@ export const AuroraBackground = ({
   return (
     <div
       className={cn(
-        "relative flex flex-col h-full min-h-screen items-center justify-center bg-white dark:bg-zinc-900 text-slate-950 transition-bg gpu-accelerated will-change-transform",
+        "relative flex flex-col h-full min-h-screen items-center justify-center bg-white dark:bg-zinc-900 text-slate-950 transition-bg",
         className
       )}
       {...props}
@@ -38,7 +38,7 @@ export const AuroraBackground = ({
         <div
           className={cn(
             `
-            absolute -inset-[10px] opacity-60 pointer-events-none will-change-transform gpu-accelerated
+            absolute -inset-[10px] opacity-60 pointer-events-none will-change-transform
             bg-gradient-to-br from-blue-100/30 via-indigo-100/20 to-violet-100/30
             dark:from-blue-900/20 dark:via-indigo-900/10 dark:to-violet-900/20
             `,
@@ -52,7 +52,7 @@ export const AuroraBackground = ({
           <div
             className={cn(
               `
-              absolute -inset-[10px] opacity-30 pointer-events-none gpu-accelerated will-change-transform
+              absolute -inset-[10px] opacity-30 pointer-events-none
               bg-gradient-to-tr from-transparent via-primary/5 to-transparent
               animate-pulse
               `,

@@ -7,7 +7,7 @@ import videoPreview from '@/assets/video-preview.jpg';
 export const VideoSection = () => {
   return (
     <motion.div 
-      className="max-w-4xl mx-auto px-6 text-center mb-32 md:mb-40 gpu-accelerated will-change-transform"
+      className="max-w-4xl mx-auto px-6 text-center mb-32 md:mb-40"
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ 
         opacity: 1, 
