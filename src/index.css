@@ -8,6 +8,16 @@ All colors MUST be HSL for consistency and theme switching.
 
 @layer base {
   :root {
+    /* Aurora Background Variables */
+    --white: 255 255 255;
+    --black: 0 0 0;
+    --transparent: transparent;
+    --blue-500: 59 130 246;
+    --indigo-300: 165 180 252;
+    --blue-300: 147 197 253;
+    --violet-200: 196 181 253;
+    --blue-400: 96 165 250;
+
     /* Core Light Theme */
     --background: 0 0% 100%;
     --foreground: 0 0% 7%; /* Deep gray instead of pure black */
