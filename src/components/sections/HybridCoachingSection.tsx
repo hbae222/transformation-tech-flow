@@ -80,7 +80,7 @@ export const HybridCoachingSection = () => {
               </ul>
             }
             header={
-              <div className="flex items-center justify-center h-20 bg-gradient-to-br from-muted/20 to-muted/10 rounded-lg mb-4">
+              <div className="flex items-center justify-center h-16 bg-gradient-to-br from-muted/20 to-muted/10 rounded-lg mb-2">
                 <div className="text-4xl">{benefit.emoji}</div>
               </div>
             }

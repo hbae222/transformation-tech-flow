@@ -26,7 +26,7 @@ export const WaitlistFormCurved = () => {
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <Input
             type="email"
-            placeholder="Your email"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
