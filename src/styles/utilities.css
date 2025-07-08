@@ -1,0 +1,76 @@
+/* Custom Utility Classes */
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .glow-accent {
+    box-shadow: var(--glow-accent);
+  }
+  
+  .glow-focus {
+    box-shadow: var(--glow-focus);
+  }
+  
+  .gradient-neural {
+    background: var(--gradient-neural);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-mesh {
+    background: var(--gradient-mesh);
+  }
+  
+  .gradient-cta {
+    background: var(--gradient-cta);
+  }
+  
+  .gradient-background {
+    background: var(--gradient-background);
+  }
+  
+  .shadow-neural {
+    box-shadow: var(--shadow-neural);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+  
+  .shadow-subtle {
+    box-shadow: var(--shadow-subtle);
+  }
+  
+  .shadow-pink {
+    box-shadow: var(--shadow-pink);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-glow {
+    transition: var(--transition-glow);
+  }
+  
+  .transition-parallax {
+    transition: var(--transition-parallax);
+  }
+  
+  .neural-border {
+    border: 1px solid hsl(var(--border));
+    background: linear-gradient(90deg, transparent, hsl(var(--primary)) 50%, transparent);
+    background-size: 200% 1px;
+    background-repeat: no-repeat;
+    background-position: -100% 0;
+    animation: neural-flow 3s ease-in-out infinite;
+  }
+}
