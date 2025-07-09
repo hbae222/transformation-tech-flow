@@ -84,7 +84,7 @@ export const HybridCoachingSection = () => {
                 <div className="text-4xl">{benefit.emoji}</div>
               </div>
             }
-            className={`benefit-card`}
+            className={`benefit-card hover:glow-primary`}
           />
         ))}
       </BentoGrid>
