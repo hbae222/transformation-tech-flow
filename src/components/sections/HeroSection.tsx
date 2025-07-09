@@ -56,9 +56,9 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-          className="hero-subtitle mb-8 max-w-2xl text-slate-400"
+          className="hero-subtitle mb-8 max-w-2xl text-foreground"
         >
-          Weekly coaching. Daily AI check-ins. A new hybrid system designed to help ADHD brains improve faster.
+          <span className="font-bold">Weekly coaching. Daily AI check-ins.</span> A new hybrid system designed to help ADHD brains improve faster.
         </motion.p>
         
         {/* Pill Badges */}
