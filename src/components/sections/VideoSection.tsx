@@ -48,20 +48,15 @@ export const VideoSection = () => {
     }}>
         See How It Works
       </motion.h2>
-      <motion.p initial={{
-      opacity: 0,
-      y: 20
-    }} whileInView={{
-      opacity: 1,
-      y: 0
-    }} transition={{
-      duration: 0.6,
-      delay: 0.1,
-      ease: "easeOut"
-    }} viewport={{
-      once: true,
-      margin: "-100px"
-    }} className="text-muted-foreground text-lg mb-12">Watch how our hybrid method builds focus, habits, and clarity - in under 2 minutes.</motion.p>
+      <motion.p 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+        viewport={{ once: true, margin: "-100px" }}
+        className="text-muted-foreground text-lg mb-12"
+      >
+        Watch how our new hybrid methodology speeds up your progress in 2 minutes.
+      </motion.p>
       
       <motion.div initial={{
       opacity: 0,

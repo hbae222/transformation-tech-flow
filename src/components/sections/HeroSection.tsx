@@ -58,7 +58,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
           className="hero-subtitle mb-8 max-w-2xl text-foreground"
         >
-          <span className="italic">Weekly coaching. Daily AI check-ins.</span> A new hybrid system designed to help ADHD brains improve faster.
+          Weekly coaching. Daily AI check-ins. <span className="italic">A new hybrid system designed to help ADHD brains improve faster.</span>
         </motion.p>
         
         {/* Pill Badges */}

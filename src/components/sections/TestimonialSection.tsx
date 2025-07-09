@@ -7,13 +7,13 @@ export const TestimonialSection = () => {
     {
       name: "Sarah M.",
       role: "College Senior",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face&auto=format",
+      image: "/lovable-uploads/fe6174a1-4596-4ab7-b8b5-3558aeafdb40.png",
       quote: "The daily AI check-ins are a game changer! I used to forget my goals halfway through the week, but now I get gentle reminders that keep me on track. My coach Amelia helps me adjust when life gets chaotic - which is often with ADHD. I've actually completed 3 major projects this month!"
     },
     {
       name: "Mike R.",
       role: "Startup Founder",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face&auto=format",
+      image: "/lovable-uploads/11d68d31-1445-445c-b1ea-0baa7d604265.png",
       quote: "I was skeptical about AI coaching, but the combination is brilliant. The AI catches the small stuff I miss - like when I'm overcommitting - and my human coach helps me see the bigger strategic picture and focus my ADHD. I'm making better decisions faster and actually sleeping better knowing I'm not dropping balls."
     },
     {
@@ -91,11 +91,11 @@ export const TestimonialSection = () => {
                 </div>
                 
                 <blockquote className="flex-1 text-muted-foreground leading-relaxed italic">
-                  <span className="text-2xl text-muted-foreground font-serif leading-none">"</span>
+                  <span className="text-base italic">"</span>
                   <span className="text-base leading-relaxed">
                     {testimonial.quote}
                   </span>
-                  <span className="text-2xl text-muted-foreground font-serif leading-none">"</span>
+                  <span className="text-base italic">"</span>
                 </blockquote>
               </CardContent>
             </Card>
