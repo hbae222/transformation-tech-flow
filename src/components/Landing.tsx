@@ -2,6 +2,7 @@ import React from 'react';
 import { HeroSection } from "@/components/sections/HeroSection";
 import { VideoSection } from "@/components/sections/VideoSection";
 import { HybridCoachingSection } from "@/components/sections/HybridCoachingSection";
+import { TestimonialSection } from "@/components/sections/TestimonialSection";
 import { WaitlistSection } from "@/components/sections/WaitlistSection";
 import { FooterSection } from "@/components/sections/FooterSection";
 
@@ -19,7 +20,10 @@ const Landing = () => {
         {/* Section 3: Why Hybrid Coaching Works Better */}
         <HybridCoachingSection />
 
-        {/* Section 4: Waitlist Signup */}
+        {/* Section 4: Testimonials */}
+        <TestimonialSection />
+
+        {/* Section 5: Waitlist Signup */}
         <WaitlistSection />
       </div>
       
