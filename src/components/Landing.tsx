@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { HeroSection } from "@/components/sections/HeroSection";
+import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { VideoSection } from "@/components/sections/VideoSection";
 import { HybridCoachingSection } from "@/components/sections/HybridCoachingSection";
 import { TestimonialSection } from "@/components/sections/TestimonialSection";
@@ -12,18 +14,21 @@ const Landing = () => {
       {/* Section 1: Fullscreen Hero */}
       <HeroSection />
 
-      {/* Sections 2, 3, 4: Direct content */}
+      {/* Section 2: Features */}
+      <FeaturesSection />
+
+      {/* Sections 3, 4, 5: Direct content */}
       <div className="py-24 md:py-32 bg-white">
-        {/* Section 2: Video Demo Preview */}
+        {/* Section 3: Video Demo Preview */}
         <VideoSection />
 
-        {/* Section 3: Why Hybrid Coaching Works Better */}
+        {/* Section 4: Why Hybrid Coaching Works Better */}
         <HybridCoachingSection />
 
-        {/* Section 4: Testimonials */}
+        {/* Section 5: Testimonials */}
         <TestimonialSection />
 
-        {/* Section 5: Waitlist Signup */}
+        {/* Section 6: Waitlist Signup */}
         <WaitlistSection />
       </div>
       

@@ -32,6 +32,384 @@ export type Database = {
         }
         Relationships: []
       }
+      waitlist_site1: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site10: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site11: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site12: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site13: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site14: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site15: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site16: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site17: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site18: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site19: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site2: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site20: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site3: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site4: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site5: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site6: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site7: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site8: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_site9: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
+      waitlist_test: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
