@@ -30,14 +30,14 @@ export const WaitlistSection = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="text-center max-w-2xl mx-auto p-8"
+        className="text-center max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-pink border border-gray-100"
       >
         <motion.h2 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative z-10 text-3xl md:text-5xl lg:text-6xl font-bold text-black text-center mb-4"
+          className="relative z-10 text-3xl md:text-4xl lg:text-5xl font-bold text-black text-center mb-4"
           style={{
             textShadow: "0 0 20px rgba(139, 69, 19, 0.1)",
             filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))"
