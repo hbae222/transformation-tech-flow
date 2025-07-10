@@ -11,7 +11,7 @@ export const WaitlistSection = () => {
   return (
     <motion.div 
       data-section="waitlist"
-      className="py-4 md:py-6 flex items-center justify-center"
+      className="py-8 md:py-12 flex items-center justify-center px-4"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ 
         opacity: 1, 
@@ -30,14 +30,14 @@ export const WaitlistSection = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="text-center max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-pink border border-gray-100"
+        className="text-center max-w-4xl mx-auto p-12 md:p-16 bg-white rounded-3xl shadow-pink border border-gray-100"
       >
         <motion.h2 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative z-10 text-3xl md:text-4xl lg:text-5xl font-bold text-black text-center mb-4"
+          className="relative z-10 text-3xl md:text-4xl lg:text-5xl font-bold text-black text-center mb-6"
           style={{
             textShadow: "0 0 20px rgba(139, 69, 19, 0.1)",
             filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))"
@@ -51,7 +51,7 @@ export const WaitlistSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-muted-foreground max-w-lg mx-auto my-6 text-lg text-center relative z-10"
+          className="text-muted-foreground max-w-lg mx-auto my-8 text-lg text-center relative z-10"
         >
           We limit each cohort to 50 people to keep coaching personal and effective.
         </motion.p>
@@ -61,7 +61,7 @@ export const WaitlistSection = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="flex justify-center pt-4"
+          className="flex justify-center pt-6"
         >
           <button
             onClick={handleJoinWaitlist}
