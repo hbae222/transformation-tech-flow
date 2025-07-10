@@ -32,7 +32,15 @@ export const FeaturesSection = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <h2 className="section-heading text-black mb-4">Features</h2>
+          <h2 
+            className="text-3xl md:text-5xl lg:text-6xl font-bold text-black mb-4"
+            style={{
+              textShadow: "0 0 20px rgba(139, 69, 19, 0.1)",
+              filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))"
+            }}
+          >
+            Features
+          </h2>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

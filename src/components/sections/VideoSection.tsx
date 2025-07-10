@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { Play } from 'lucide-react';
 import { TestimonialSection } from "@/components/ui/testimonial-section";
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import videoPreview from '@/assets/video-preview.jpg';
+
 export const VideoSection = () => {
   const {
     ref,
@@ -42,7 +44,7 @@ export const VideoSection = () => {
     }} viewport={{
       once: true,
       margin: "-100px"
-    }} className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold text-black text-center mb-4" style={{
+    }} className="relative z-10 text-3xl md:text-5xl lg:text-6xl font-bold text-black text-center mb-4" style={{
       textShadow: "0 0 20px rgba(139, 69, 19, 0.1)",
       filter: "drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))"
     }}>
